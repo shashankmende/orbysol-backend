@@ -1,0 +1,12 @@
+[build]
+  base    = ""  # Base directory where Netlify should look for your site, relative to the root
+  publish = "public"  # Directory to publish (Netlify will host the files here)
+  command = "npm install && npm run build"  # Command to run for building your project
+
+[functions]
+  directory = "netlify/functions"  # Directory for Netlify functions (serverless functions)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
