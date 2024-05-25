@@ -1,6 +1,6 @@
 [build]
-  base    = ""  # Base directory where Netlify should look for your site, relative to the root
-  publish = "public"  # Directory to publish (Netlify will host the files here)
+  base    = ""  # Base directory for the build process, leave it blank to use the root directory
+  publish = "public"  # Directory to publish the built files
   command = "npm install && npm run build"  # Command to run for building your project
 
 [functions]
